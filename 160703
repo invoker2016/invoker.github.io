@@ -25,12 +25,66 @@
 	</div>
 <div id="md" style="display: none;">
 <!-- markdown -->
+<h1>PHP连接SQLSERVER注意事项</h1>
+<h3>一、下载SQLSERVER的扩展</h3>
+1.在微软官网中下载 THE SQLSERVER DRIVER FOR PHP,由于官网下载的支持PHP5.5及5.6的驱动是X86版本，没有X64版本，此处提供网友分享的X64版本 <a>http://pan.baidu.com/s/1kT5PceN</a>
+
+2.需要下载Mircosoft SQL Server 2012 Native Client
+
+<h3>二、PHP.ini设置</h3>
+1.解压缩文件至php的ext文件夹（扩展）中。
+
+2.打开php.ini，在extention处，添加
+
+extension=php\_pdo\_sqlsrv\_56\_ts.dll
+
+extension=php\_sqlsrv\_56\_ts.dll
+
+3.同时需设置php扩展ext的目录： 
+
+
+    （1）按下ctrl+f 搜索：extention_dir
+
+    （2）找到OnWindows下的extention_dir
+
+    （3）添加php\ext目录
+
+
+
+<h2>注：本人使用php5.6+sqlserver2014 or sqlserver2008 r2 通过</h2>
 
 <!-- markdown end -->
 </div>
 <div class="entry" id="main">
 <!-- content -->
+<h1>PHP连接SQLSERVER注意事项</h1>
 
+<h3>一、下载SQLSERVER的扩展</h3>
+
+<p>1.在微软官网中下载 THE SQLSERVER DRIVER FOR PHP,由于官网下载的支持PHP5.5及5.6的驱动是X86版本，没有X64版本，此处提供网友分享的X64版本 <a>http://pan.baidu.com/s/1kT5PceN</a></p>
+
+<p>2.需要下载Mircosoft SQL Server 2012 Native Client</p>
+
+<h3>二、PHP.ini设置</h3>
+
+<p>1.解压缩文件至php的ext文件夹（扩展）中。</p>
+
+<p>2.打开php.ini，在extention处，添加</p>
+
+<p>extension=php_pdo_sqlsrv_56_ts.dll</p>
+
+<p>extension=php_sqlsrv_56_ts.dll</p>
+
+<p>3.同时需设置php扩展ext的目录： </p>
+
+<pre><code>（1）按下ctrl+f 搜索：extention_dir
+
+（2）找到OnWindows下的extention_dir
+
+（3）添加php\ext目录
+</code></pre>
+
+<h2>注：本人使用php5.6+sqlserver2014 or sqlserver2008 r2 通过</h2>
 <!-- content end -->
 </div>
 <br>
