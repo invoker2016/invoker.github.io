@@ -26,11 +26,30 @@
 <div id="md" style="display: none;">
 <!-- markdown -->
 <h2>for mac os10.12,软件版本如下:</h2>
+<ol>
+    <li>python2.7 --mac 自带</li>
+    <li>apache2.4 --mac 自带</li>
+    <li>mod_wsgi 通过sudo pip install mod_wsgi 安装</li>
+</ol>
+
+mod\_wsgi 安装完毕后，通过 mod\_wsgi-express module-location 获取mod\_wsgi-py27.so的路径
+
+在apache2的配置文件(/private/etc/apache2)httpd.conf中，LoadModule的最后 添加 LoadModule wsgi_module wsgi-py27.so的详细路径
 <!-- markdown end -->
 </div>
 <div class="entry" id="main">
 <!-- content -->
 <h2>for mac os10.12,软件版本如下:</h2>
+
+<ol>
+    <li>python2.7 --mac 自带</li>
+    <li>apache2.4 --mac 自带</li>
+    <li>mod_wsgi 通过sudo pip install mod_wsgi 安装</li>
+</ol>
+
+<p>mod_wsgi 安装完毕后，通过 mod_wsgi-express module-location 获取mod_wsgi-py27.so的路径</p>
+
+<p>在apache2的配置文件(/private/etc/apache2)httpd.conf中，LoadModule的最后 添加 LoadModule wsgi_module wsgi-py27.so的详细路径</p>
 <!-- content end -->
 </div>
 <br>
